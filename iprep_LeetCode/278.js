@@ -20,13 +20,17 @@ var solution = function(isBadVersion) {
    return function(n) {
     let start = 1;
     let end = n;
-
+    // do until start & end have not met/crossed
     while(start < end) {
+        // calculate mid point
         let mid = start + Math.floor((end - start) / 2);
-
+        // if mid point is not a bad version, then the bad version is
+        // somewhere to the right of the current mid point
         if(!isBadVersion(mid)) {
+            // move start point to the right
             start = mid + 1;
        } else {
+          // pull in the end variable to the mid point to eliminate it 
            end = mid;
        }
     }

@@ -5,21 +5,24 @@
 // what arguments do they take?
 // how are they different?
 
-const car1 = {
-  brand: 'Porsche',
-  getCarDescription: function(cost, year, color) {
-    console.log(`This car is a ${this.brand}. The price is $${cost}. The year is ${year}. The color is ${color}.\n`);
+// object nextGen
+const nextGen = {
+  // property version
+  version: 'NCC1701D',
+  // method getShipDescription
+  getShipDescription: function(year, captain, speed) {
+    console.log(`This ship is ${this.version}. This ship was launched in ${year}. It was piloted by ${captain}. The ship was able to reach max speed of ${speed}. \n`);
   }
 };
 
-const car2 = {
-  brand: 'Lamborghini'
+const original = {
+  version: 'NCC1701'
 };
 
-const car3 = {
-  brand: 'Ford'
+const enterprise = {
+  version: 'NX01'
 };
 
-car1.getCarDescription(80000, 2010, 'blue');
-car1.getCarDescription.call(car2, 200000, 2013, 'yellow');
-car1.getCarDescription.apply(car3, [35000, 2012, 'black']); // accepts arguments in an array
+nextGen.getShipDescription(2245, 'Jean-Luc Picard', 'Warp 9');
+nextGen.getShipDescription.apply(original, [2245, 'James Kirk', 'Warp 8']); // accepts arguments in an array
+nextGen.getShipDescription.call(enterprise, 2151, 'Henry Archer', 'Warp 5');
