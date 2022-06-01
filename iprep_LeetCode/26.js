@@ -1,6 +1,6 @@
 // Problem 26: Remove Duplicates from Sorted Array
 // return count of unique numbers in sorted array
-// return the unique numbers listed at the fron of the array
+// return the unique numbers listed at the front of the array
 // do not create a new array
 
 // Solution: 2 pointers
