@@ -3,7 +3,7 @@
 // return the unique numbers listed at the front of the array
 // do not create a new array
 
-// Solution: 2 pointers
+// Solution: two pointers
 
 var removeDuplicates = function(nums) {
   // check if the array is empty

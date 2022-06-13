@@ -3,6 +3,7 @@
 // remove all occurrences of val in nums in-place.
 // The relative order of the elements may be changed.
 
+// Solution: two pointers
 var removeElement = function(nums, val) {
   // return 0 if the array is empty
   if (nums.length == 0) {
@@ -22,6 +23,6 @@ var removeElement = function(nums, val) {
       pointer1++;
     }
   }
-  // return the index of pointer 1 which is equal to val we changed 
+  // return the index of pointer 1
   return pointer1;
 };
