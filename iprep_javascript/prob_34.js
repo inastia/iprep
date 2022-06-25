@@ -4,7 +4,7 @@
 
 // Example: maxChar('abcccccccd') === 'c'
 
-// Solution: 
+// Solution:
 
 function maxChar(str) {
 

@@ -12,4 +12,4 @@ function palindrome(str) {
 }
 
 console.log(palindrome('abba')); // true
-console.log(palindrome('hello')); // false 
+console.log(palindrome('hello')); // false
