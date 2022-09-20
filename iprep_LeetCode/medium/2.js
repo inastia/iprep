@@ -21,15 +21,5 @@
 var addTwoNumbers = function(l1, l2) {
   var sum = []
 
-  // while both lists have numbers in them 
-
-  // reverse l1
-  // output l1 as a number
-
-  // reverse l2
-  // output l2 as a number
-
-  // add l1 and l2
-  // output a reverse sum
 
 };
