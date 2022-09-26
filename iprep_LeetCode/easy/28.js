@@ -11,21 +11,19 @@
 
 // Solution 1: brute force O(n * m)
 var strStr = function(haystack, needle) {
-
-  // if needle is an empty string return 0
-  if (needle == "") return 0;
+  if (!needle.length) return 0;
 
   for (let i = 0; i < haystack.length; i++) {
-    let k = i;
-    j = 0;
-    while (haystack[k] === needle[j] && j < needle.length) {
-      // move second pointer forward
-      j++;
-      k++;
-    }
-    if (needle.length === j) return i;
+    if (haystack[i] === needle[0] && haystack.substring(i, i + needle.length) === needle) return i;
   }
+
   return -1;
 };
 
-// Solution 2: KMP O(n + m)
+// Solution 2
+var strStr = function(haystack, needle) {
+  if (needle === "") {
+    return 0;
+  }
+  return haystack.indexOf(needle);
+}
